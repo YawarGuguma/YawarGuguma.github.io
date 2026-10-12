@@ -3,345 +3,66 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yawar Rehman, PhD — Research Professor | Video Understanding & Trustworthy AI</title>
-<meta name="description" content="Yawar Rehman, PhD — Research Professor working on video understanding, temporal action localization, trustworthy AI, and computer vision.">
+<title>Yawar Rehman, PhD — Research Professor</title>
+<meta name="description" content="Yawar Rehman, PhD — Research Professor in video understanding, trustworthy AI, temporal action localization, and computer vision.">
 <meta name="author" content="Yawar Rehman">
-<meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yawar Rehman, PhD — Research Professor">
-<meta property="og:description" content="Research in video understanding, point-supervised temporal action localization, trustworthy AI, and computer vision.">
+<meta property="og:description" content="Video Understanding · Trustworthy AI · Computer Vision">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/144770407?v=4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#080b12;
-  --panel:#0e1420;
-  --panel2:#141d2b;
-  --line:#243246;
-  --text:#eef4fa;
-  --dim:#96a5b7;
-  --cyan:#50d5c5;
-  --blue:#77a9f7;
-  --indigo:#564bb8;
-  --violet:#8d52c7;
-  --amber:#f0ab3c;
-  --pale:#dffcf7;
-  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
-  --body:"Manrope",system-ui,-apple-system,sans-serif;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --gutter:clamp(1.15rem,5vw,4.6rem);
-  --radius:14px;
-  --grad:linear-gradient(90deg,var(--blue),var(--cyan),var(--amber));
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:78px}
-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:clamp(.97rem,.94rem + .15vw,1.05rem);line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:var(--cyan);text-decoration:none}a:hover{color:var(--amber)}
-img{max-width:100%;display:block}
-:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gutter)}
-.eyebrow{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);margin:0 0 .9rem}
-.sec-head{margin-bottom:clamp(2rem,4vw,3rem)}
-h2{font-family:var(--display);font-variation-settings:"wdth" 108;font-weight:750;font-size:clamp(2.05rem,1.3rem + 2.6vw,3.25rem);line-height:1.02;letter-spacing:-.038em;margin:0 0 .75rem}
-.sec-head p{margin:0;color:var(--dim);max-width:58ch;font-size:1.02rem}
-section{padding-block:clamp(3.2rem,7vw,5.8rem)}
-
-/* header */
-.bar{position:sticky;top:0;z-index:70;background:rgba(8,11,18,.84);backdrop-filter:blur(13px);border-bottom:1px solid rgba(119,169,247,.12)}
-.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:68px}
-.logo{font-family:var(--mono);font-size:.86rem;color:var(--text)}
-.logo b{color:var(--cyan);font-weight:400}
-.bar nav{display:flex;gap:clamp(.8rem,1.8vw,1.6rem)}
-.bar nav a{font-family:var(--mono);font-size:.7rem;letter-spacing:.075em;text-transform:uppercase;color:var(--dim)}
-.bar nav a:hover{color:var(--cyan)}
-.burger{display:none;border:1px solid var(--line);background:transparent;border-radius:8px;padding:.42rem .62rem;color:var(--text);font-size:1rem;cursor:pointer}
-@media(max-width:900px){.bar nav{position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:.45rem var(--gutter) 1rem}.bar nav[hidden]{display:none}.bar nav a{padding:.72rem 0;border-bottom:1px solid var(--line)}.burger{display:block}}
-
-/* hero */
-.hero{position:relative;padding-block:clamp(3.2rem,8vw,6.3rem) clamp(2rem,5vw,3.5rem);overflow:hidden}
-#field{position:absolute;inset:0;width:100%;height:100%;opacity:.88;pointer-events:none;-webkit-mask-image:radial-gradient(115% 90% at 62% 45%,#000 0%,rgba(0,0,0,.55) 55%,transparent 90%);mask-image:radial-gradient(115% 90% at 62% 45%,#000 0%,rgba(0,0,0,.55) 55%,transparent 90%)}
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background:linear-gradient(90deg,rgba(119,169,247,.045) 1px,transparent 1px) 0 0/74px 74px,linear-gradient(rgba(119,169,247,.045) 1px,transparent 1px) 0 0/74px 74px;-webkit-mask-image:radial-gradient(90% 70% at 55% 45%,#000,transparent 82%);mask-image:radial-gradient(90% 70% at 55% 45%,#000,transparent 82%)}
-.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr);gap:clamp(2rem,5vw,4.2rem);align-items:center}
-h1{font-family:var(--display);font-variation-settings:"wdth" 108;font-weight:800;font-size:clamp(2.7rem,1rem + 6.5vw,5.7rem);line-height:.93;letter-spacing:-.045em;margin:0 0 1.15rem}
-h1 span{display:block;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero .intro{margin:0;color:var(--dim);max-width:56ch;font-size:1.03rem}
-.hero .cta{display:flex;flex-wrap:wrap;gap:.72rem;margin-top:1.9rem}
-.btn{font-family:var(--mono);font-size:.75rem;letter-spacing:.055em;padding:.8rem 1.25rem;border-radius:999px;border:1px solid var(--line);transition:.18s ease}
-.btn.solid{background:var(--cyan);border-color:var(--cyan);color:#06100f;font-weight:500}.btn.solid:hover{background:var(--amber);border-color:var(--amber);color:#151007;transform:translateY(-2px)}
-.btn.ghost{color:var(--text);background:transparent}.btn.ghost:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px)}
-.portrait{position:relative;justify-self:center;width:min(320px,80vw);margin:0}
-.portrait img{width:320px;height:320px;object-fit:cover;border-radius:var(--radius);border:1px solid var(--line);background:var(--panel)}
-.portrait .corner{position:absolute;width:23px;height:23px;border:2px solid var(--cyan)}
-.portrait .c1{top:-7px;left:-7px;border-right:0;border-bottom:0;border-radius:6px 0 0 0}.portrait .c2{top:-7px;right:-7px;border-left:0;border-bottom:0;border-radius:0 6px 0 0}.portrait .c3{bottom:-7px;left:-7px;border-right:0;border-top:0;border-radius:0 0 0 6px}.portrait .c4{bottom:-7px;right:-7px;border-left:0;border-top:0;border-radius:0 0 6px 0}
-.portrait .tag{position:absolute;top:-14px;left:14px;background:var(--cyan);color:#071210;font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;padding:.22rem .56rem;border-radius:4px;z-index:2}
-@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.portrait{justify-self:start;margin-top:1rem;width:min(280px,78vw)}.portrait img{width:280px;height:280px}}
-
-/* stack */
-.stack{padding-block:clamp(1.5rem,3vw,2.4rem)}
-.stack h3{font-family:var(--mono);font-size:.69rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);text-align:center;font-weight:400;margin:0 0 1.45rem}
-.icons{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(1rem,3.3vw,2.5rem);align-items:center}
-.icons figure{margin:0;text-align:center;width:72px}.icons img{height:34px;width:auto;margin:0 auto;filter:grayscale(1) opacity(.67);transition:.2s ease}.icons figure:hover img{filter:none;transform:translateY(-3px)}.icons figcaption{font-family:var(--mono);font-size:.59rem;color:var(--dim);margin-top:.48rem;letter-spacing:.05em}
-.marquee{border-block:1px solid var(--line);background:var(--panel);overflow:hidden;padding:.86rem 0;margin-top:clamp(1.5rem,4vw,2.5rem)}
-.marquee div{display:flex;width:max-content;animation:slide 38s linear infinite}.marquee:hover div{animation-play-state:paused}.marquee span{font-family:var(--mono);font-size:.73rem;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);padding-inline:1.4rem;white-space:nowrap}.marquee span::after{content:"◆";color:var(--cyan);margin-left:2.8rem;font-size:.58rem;vertical-align:middle}@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-/* project cards */
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,21rem),1fr));gap:1.3rem}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.22s ease}.card:hover{transform:translateY(-4px);border-color:rgba(80,213,197,.6);background:var(--panel2)}
-.thumb{height:138px;position:relative;background:linear-gradient(180deg,#0d1520,#090e16);border-bottom:1px solid var(--line);overflow:hidden}.thumb svg{width:100%;height:100%;display:block;opacity:.9;transition:.2s ease}.card:hover .thumb svg{opacity:1}.thumb .num{position:absolute;right:14px;top:9px;font-family:var(--mono);font-size:.71rem;letter-spacing:.14em;color:var(--dim)}
-.card .body{padding:1.3rem 1.35rem 1.45rem;display:flex;flex-direction:column;gap:.72rem;flex:1}.badge{font-family:var(--mono);font-size:.59rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);border:1px solid rgba(240,171,60,.35);border-radius:999px;padding:.18rem .55rem;align-self:flex-start}.card h3{margin:0;font-family:var(--display);font-variation-settings:"wdth" 104;font-size:1.15rem;font-weight:700;letter-spacing:-.02em;line-height:1.3}.card h3 a{color:var(--text)}.card:hover h3 a{color:var(--cyan)}.card p{margin:0;color:var(--dim);font-size:.93rem;flex:1}.tags{display:flex;flex-wrap:wrap;gap:.35rem;margin:0;padding:0;list-style:none}.tags li{font-family:var(--mono);font-size:.61rem;color:var(--dim);background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:.2rem .48rem}
-.more{text-align:center;margin-top:2.1rem}
-
-/* experience timeline */
-.timeline{position:relative;max-width:960px;margin:0 auto;padding:0;list-style:none}.timeline::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(var(--cyan),var(--line),var(--blue));transform:translateX(-.5px)}
-.timeline li{position:relative;width:50%;padding:0 3rem 2.4rem 0}.timeline li:nth-child(even){margin-left:50%;padding:0 0 2.4rem 3rem}.timeline li::after{content:"";position:absolute;top:1.1rem;right:-6px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan);box-shadow:0 0 0 5px rgba(80,213,197,.08)}.timeline li:nth-child(even)::after{right:auto;left:-6px}
-.timeline .box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem 1.45rem}.timeline .when{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;color:var(--cyan)}.timeline h3{font-family:var(--display);font-size:1.17rem;margin:.35rem 0 .1rem}.timeline .org{font-family:var(--mono);font-size:.69rem;color:var(--amber);margin-bottom:.7rem}.timeline p{margin:0;color:var(--dim);font-size:.92rem}
-@media(max-width:760px){.timeline::before{left:7px}.timeline li,.timeline li:nth-child(even){width:100%;margin:0;padding:0 0 1.4rem 2.3rem}.timeline li::after,.timeline li:nth-child(even)::after{left:1px;right:auto}}
-
-/* papers */
-.paper-list{display:grid;gap:.85rem}.paper{display:grid;grid-template-columns:80px 1fr auto;gap:1.2rem;align-items:start;padding:1.2rem 1.25rem;background:var(--panel);border:1px solid var(--line);border-radius:12px;transition:.2s}.paper:hover{border-color:rgba(119,169,247,.5);transform:translateX(3px)}.paper .year{font-family:var(--mono);font-size:.7rem;color:var(--cyan)}.paper h3{font-family:var(--display);font-size:1.02rem;line-height:1.35;margin:0 0 .28rem}.paper p{margin:0;color:var(--dim);font-size:.86rem}.paper a{font-family:var(--mono);font-size:.68rem;white-space:nowrap}
-@media(max-width:650px){.paper{grid-template-columns:56px 1fr}.paper a{grid-column:2}}
-
-/* skills */
-.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.skill{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.35rem}.skill h3{font-family:var(--display);font-size:1rem;margin:0 0 .85rem}.chips{display:flex;flex-wrap:wrap;gap:.4rem}.chips span{font-family:var(--mono);font-size:.63rem;padding:.27rem .5rem;border:1px solid var(--line);border-radius:5px;color:var(--dim);background:var(--panel2)}
-@media(max-width:850px){.skill-grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.skill-grid{grid-template-columns:1fr}}
-
-/* education */
-.edu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.edu{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem}.edu .degree{font-family:var(--mono);font-size:.65rem;color:var(--cyan);letter-spacing:.07em}.edu h3{font-family:var(--display);font-size:1.08rem;margin:.45rem 0 .2rem}.edu p{margin:0;color:var(--dim);font-size:.9rem}@media(max-width:820px){.edu-grid{grid-template-columns:1fr}}
-
-/* contact */
-.contact-box{position:relative;overflow:hidden;background:linear-gradient(135deg,#111c2a,#0b121c);border:1px solid var(--line);border-radius:20px;padding:clamp(1.7rem,4vw,3.2rem)}.contact-box::after{content:"";position:absolute;width:280px;height:280px;border-radius:50%;right:-100px;top:-100px;background:radial-gradient(circle,rgba(80,213,197,.16),transparent 68%)}.contact-box h2{max-width:800px}.contact-box p{max-width:720px;color:var(--dim)}.contact-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.7rem}.contact-links a{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.68rem 1rem;color:var(--text)}.contact-links a:hover{border-color:var(--cyan);color:var(--cyan)}
-footer{border-top:1px solid var(--line);padding:1.8rem 0 2.6rem;color:var(--dim);font-family:var(--mono);font-size:.67rem}.foot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.reveal{opacity:0;transform:translateY(20px);transition:.65s ease}.reveal.on{opacity:1;transform:none}
+:root{--bg:#080b11;--panel:#101722;--panel2:#16202d;--line:#263346;--text:#eef4fb;--dim:#91a0b3;--cyan:#68d6d0;--blue:#6aa7ff;--violet:#8b7cf6;--warm:#f1c27d;--display:"Archivo",sans-serif;--body:"Manrope",sans-serif;--mono:"JetBrains Mono",monospace;--gutter:clamp(1.1rem,5vw,4.5rem);--radius:15px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:78px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:clamp(.97rem,.94rem + .15vw,1.05rem);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}html[lang="ko"] body{font-family:"Noto Sans KR",var(--body),sans-serif;line-height:1.82}html[lang="ko"] h1,html[lang="ko"] h2,html[lang="ko"] h3{font-family:"Noto Sans KR",sans-serif;letter-spacing:-.025em}a{color:var(--cyan);text-decoration:none}a:hover{color:#fff}.wrap{max-width:1180px;margin:auto;padding-inline:var(--gutter)}.eyebrow{font-family:var(--mono);font-size:.69rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);margin:0 0 .8rem}.bar{position:sticky;top:0;z-index:80;background:rgba(8,11,17,.84);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.bar .wrap{height:67px;display:flex;align-items:center;justify-content:space-between;gap:1rem}.logo{font-family:var(--mono);font-size:.86rem;color:var(--text)}.logo b{color:var(--cyan);font-weight:400}.bar-right{display:flex;align-items:center;gap:1rem}.bar nav{display:flex;gap:clamp(.7rem,1.65vw,1.5rem)}.bar nav a{font-family:var(--mono);font-size:.71rem;letter-spacing:.075em;text-transform:uppercase;color:var(--dim)}.bar nav a:hover{color:var(--cyan)}.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}.lang button{font-family:var(--mono);font-size:.67rem;letter-spacing:.07em;padding:.35rem .62rem;border:0;background:transparent;color:var(--dim);cursor:pointer}.lang button[aria-pressed="true"]{background:var(--cyan);color:#071110}.burger{display:none;border:1px solid var(--line);background:transparent;color:var(--text);border-radius:8px;padding:.38rem .58rem;font-size:1rem;cursor:pointer}
+.hero{position:relative;overflow:hidden;padding-block:clamp(3.2rem,8vw,6.3rem) clamp(2.2rem,5vw,4rem)}.hero:before{content:"";position:absolute;inset:-10%;background:radial-gradient(circle at 22% 45%,rgba(104,214,208,.12),transparent 25%),radial-gradient(circle at 72% 38%,rgba(106,167,255,.15),transparent 24%);pointer-events:none}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(106,167,255,.045) 1px,transparent 1px) 0 0/72px 72px,linear-gradient(rgba(106,167,255,.045) 1px,transparent 1px) 0 0/72px 72px;mask-image:radial-gradient(90% 72% at 55% 45%,#000,transparent 82%);pointer-events:none}.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(2rem,5vw,4rem);align-items:center}h1{font-family:var(--display);font-variation-settings:"wdth" 108;font-weight:800;font-size:clamp(2.6rem,1rem + 6vw,5.25rem);line-height:.94;letter-spacing:-.045em;margin:0 0 1.2rem}h1 span{display:block;background:linear-gradient(90deg,var(--cyan),var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}.intro{max-width:53ch;color:var(--dim);margin:0}.cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}.btn{font-family:var(--mono);font-size:.74rem;letter-spacing:.055em;padding:.78rem 1.2rem;border-radius:999px;border:1px solid var(--line);transition:.18s ease}.btn.solid{background:var(--cyan);border-color:var(--cyan);color:#071110}.btn.ghost{color:var(--text)}.btn:hover{transform:translateY(-2px)}.portrait{position:relative;justify-self:center;width:min(320px,80vw);margin:0}.portrait img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--radius);border:1px solid var(--line);background:var(--panel)}.corner{position:absolute;width:22px;height:22px;border:2px solid var(--cyan)}.c1{top:-7px;left:-7px;border-right:0;border-bottom:0}.c2{top:-7px;right:-7px;border-left:0;border-bottom:0}.c3{bottom:-7px;left:-7px;border-right:0;border-top:0}.c4{bottom:-7px;right:-7px;border-left:0;border-top:0}.portrait .tag{position:absolute;top:-14px;left:15px;background:var(--cyan);color:#071110;font-family:var(--mono);font-size:.61rem;letter-spacing:.08em;padding:.2rem .52rem;border-radius:4px}.stack{padding-block:1.9rem}.stack h3{font-family:var(--mono);font-weight:400;text-align:center;text-transform:uppercase;letter-spacing:.18em;color:var(--dim);font-size:.69rem;margin:0 0 1.4rem}.icons{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:clamp(1rem,3.3vw,2.5rem)}.icons figure{width:70px;text-align:center;margin:0}.icons img{height:34px;width:auto;margin:auto;filter:grayscale(1) opacity(.65);transition:.2s}.icons figure:hover img{filter:none;transform:translateY(-3px)}.icons figcaption{font-family:var(--mono);font-size:.59rem;color:var(--dim);margin-top:.48rem}.marquee{border-block:1px solid var(--line);background:var(--panel);overflow:hidden;padding:.83rem 0}.marquee div{display:flex;width:max-content;animation:slide 34s linear infinite}.marquee span{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding-inline:1.35rem;white-space:nowrap}.marquee span:after{content:"◆";color:var(--cyan);margin-left:2.7rem;font-size:.55rem}@keyframes slide{to{transform:translateX(-50%)}}
+section{padding-block:clamp(3.1rem,7vw,5.5rem)}.sec-head{margin-bottom:clamp(2rem,4vw,3rem)}.sec-head h2{font-family:var(--display);font-variation-settings:"wdth" 108;font-size:clamp(2rem,1.3rem + 2.6vw,3.2rem);line-height:1;letter-spacing:-.035em;margin:0 0 .7rem}.sec-head p{margin:0;color:var(--dim);max-width:55ch}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,21rem),1fr));gap:1.25rem}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.22s}.card:hover{transform:translateY(-4px);border-color:#426184;background:var(--panel2)}.thumb{height:132px;position:relative;border-bottom:1px solid var(--line);overflow:hidden;background:linear-gradient(145deg,#0b111a,#111b28)}.thumb .grid{position:absolute;inset:0;background:linear-gradient(90deg,rgba(104,214,208,.06) 1px,transparent 1px) 0 0/25px 25px,linear-gradient(rgba(104,214,208,.06) 1px,transparent 1px) 0 0/25px 25px}.thumb .timeline-viz{position:absolute;left:10%;right:10%;top:58%;height:7px;background:#223349;border-radius:8px}.thumb .timeline-viz:after{content:"";position:absolute;left:42%;width:31%;height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:8px;box-shadow:0 0 18px rgba(104,214,208,.35)}.thumb .dot{position:absolute;width:13px;height:13px;border:2px solid var(--cyan);border-radius:50%;left:52%;top:37%}.thumb .box{position:absolute;border:1px solid var(--blue);width:76px;height:47px;left:51%;top:32%}.thumb .heat{position:absolute;width:120px;height:70px;left:calc(50% - 60px);top:30px;background:radial-gradient(circle,var(--warm),var(--violet) 35%,transparent 68%);filter:blur(3px);opacity:.8}.thumb .num{position:absolute;right:14px;top:10px;font-family:var(--mono);font-size:.68rem;color:var(--dim)}.body-card{padding:1.3rem;display:flex;flex-direction:column;gap:.7rem;flex:1}.badge{font-family:var(--mono);font-size:.59rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);border:1px solid rgba(104,214,208,.32);border-radius:999px;padding:.17rem .5rem;align-self:flex-start}.card h3{font-family:var(--display);font-size:1.16rem;letter-spacing:-.02em;line-height:1.3;margin:0}.card p{color:var(--dim);font-size:.93rem;margin:0;flex:1}.tags{display:flex;flex-wrap:wrap;gap:.35rem;margin:0;padding:0;list-style:none}.tags li{font-family:var(--mono);font-size:.6rem;color:var(--dim);background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:.19rem .47rem}
+.timeline{position:relative;display:grid;gap:1rem}.timeline:before{content:"";position:absolute;left:24px;top:10px;bottom:10px;width:1px;background:linear-gradient(var(--cyan),var(--blue),transparent)}.role-card{position:relative;margin-left:56px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.35rem 1.45rem}.role-card:before{content:"";position:absolute;left:-39px;top:28px;width:10px;height:10px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px var(--bg),0 0 18px rgba(104,214,208,.45)}.role-top{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}.role-card h3{font-family:var(--display);font-size:1.18rem;margin:0}.when{font-family:var(--mono);font-size:.69rem;color:var(--cyan)}.org{font-family:var(--mono);font-size:.7rem;color:var(--dim);margin:.33rem 0 .75rem}.role-card p{margin:0;color:var(--dim)}.papers{display:grid;gap:.75rem}.paper{display:grid;grid-template-columns:75px 1fr auto;gap:1.2rem;align-items:start;padding:1.15rem 1.2rem;border:1px solid var(--line);border-radius:12px;background:var(--panel)}.year{font-family:var(--mono);font-size:.69rem;color:var(--cyan)}.paper h3{font-family:var(--display);font-size:1.05rem;line-height:1.35;margin:0 0 .25rem}.paper p{margin:0;color:var(--dim);font-size:.9rem}.paper a{font-family:var(--mono);font-size:.67rem;white-space:nowrap}.skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.skill{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.25rem}.skill h3{font-family:var(--mono);font-size:.76rem;color:var(--cyan);letter-spacing:.08em;text-transform:uppercase;margin:0 0 .65rem}.skill p{margin:0;color:var(--dim)}.education{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.edu{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.3rem}.edu .degree{font-family:var(--display);font-weight:700;font-size:1.12rem}.edu .school{color:var(--cyan);margin:.3rem 0}.edu p{color:var(--dim);margin:0;font-size:.92rem}.contact-box{background:linear-gradient(135deg,#111a27,#0d141e);border:1px solid var(--line);border-radius:20px;padding:clamp(1.5rem,5vw,3.3rem)}.contact-box h2{font-family:var(--display);font-size:clamp(2rem,4vw,3.4rem);line-height:1.05;letter-spacing:-.035em;margin:.25rem 0 1rem}.contact-box p{color:var(--dim);max-width:65ch}.socials{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.3rem}.socials a{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.65rem .9rem;color:var(--text)}.footer{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);padding-block:1.8rem 2.8rem;color:var(--dim);font-family:var(--mono);font-size:.65rem}.reveal{opacity:0;transform:translateY(18px);transition:.6s}.reveal.on{opacity:1;transform:none}
+@media(max-width:900px){.bar nav{position:absolute;top:67px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:.4rem var(--gutter) 1rem}.bar nav[hidden]{display:none}.bar nav a{padding:.65rem 0;border-bottom:1px solid var(--line)}.burger{display:block}.hero .wrap{grid-template-columns:1fr}.portrait{justify-self:start}.education{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.portrait{width:min(270px,82vw)}.paper{grid-template-columns:58px 1fr}.paper a{grid-column:2}.role-card{margin-left:44px}.timeline:before{left:17px}.role-card:before{left:-32px}.lang button{padding:.32rem .48rem}.logo{font-size:.77rem}}
 </style>
 </head>
 <body>
-<header class="bar">
-  <div class="wrap">
-    <a class="logo" href="#top"><b>&lt;</b>Yawar<b>/&gt;</b></a>
-    <nav id="nav">
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#papers">Papers</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
-  </div>
-</header>
-
+<header class="bar"><div class="wrap"><a class="logo" href="#top"><b>&lt;</b>Yawar<b>/&gt;</b></a><div class="bar-right"><nav id="nav"><a href="#projects" data-en="Projects" data-ko="프로젝트">Projects</a><a href="#experience" data-en="Experience" data-ko="경력">Experience</a><a href="#papers" data-en="Papers" data-ko="논문">Papers</a><a href="#skills" data-en="Skills" data-ko="기술">Skills</a><a href="#education" data-en="Education" data-ko="학력">Education</a><a href="#contact" data-en="Contact" data-ko="연락처">Contact</a></nav><div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="ko" aria-pressed="false">KR</button></div><button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button></div></div></header>
 <main id="top">
-<section class="hero">
-  <canvas id="field" aria-hidden="true"></canvas>
-  <div class="wrap">
-    <div class="reveal">
-      <p class="eyebrow">PhD · Kyungpook National University · South Korea</p>
-      <h1>Yawar Rehman<span>Research Professor</span></h1>
-      <p class="intro">I work on video understanding and trustworthy AI — especially learning from sparse supervision, localizing actions in time, and building computer-vision systems that remain reliable when labels, boundaries, or evidence are imperfect.</p>
-      <div class="cta">
-        <a class="btn solid" href="#contact">Contact me</a>
-        <a class="btn ghost" href="https://scholar.google.com/citations?user=VclpjuIAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-        <a class="btn ghost" href="https://github.com/YawarGuguma" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
-    </div>
-    <figure class="portrait reveal">
-      <span class="tag">researcher · vision</span>
-      <img src="https://avatars.githubusercontent.com/u/144770407?v=4" width="320" height="320" alt="Yawar Rehman" loading="eager">
-      <span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
-    </figure>
-  </div>
-</section>
-
-<div class="stack">
-  <div class="wrap">
-    <h3>Research & development stack</h3>
-    <div class="icons">
-      <figure><img src="https://cdn.simpleicons.org/python/EFF5FA" alt="Python"><figcaption>Python</figcaption></figure>
-      <figure><img src="https://cdn.simpleicons.org/pytorch/EFF5FA" alt="PyTorch"><figcaption>PyTorch</figcaption></figure>
-      <figure><img src="https://cdn.simpleicons.org/opencv/EFF5FA" alt="OpenCV"><figcaption>OpenCV</figcaption></figure>
-      <figure><img src="https://cdn.simpleicons.org/nvidia/EFF5FA" alt="NVIDIA"><figcaption>CUDA</figcaption></figure>
-      <figure><img src="https://cdn.simpleicons.org/linux/EFF5FA" alt="Linux"><figcaption>Linux</figcaption></figure>
-      <figure><img src="https://cdn.simpleicons.org/git/EFF5FA" alt="Git"><figcaption>Git</figcaption></figure>
-      <figure><img src="https://cdn.simpleicons.org/latex/EFF5FA" alt="LaTeX"><figcaption>LaTeX</figcaption></figure>
-    </div>
-  </div>
-</div>
-
+<section class="hero"><div class="wrap"><div class="reveal"><p class="eyebrow" data-en="Ph.D. · Kyungpook National University · South Korea" data-ko="공학박사 · 경북대학교 · 대한민국">Ph.D. · Kyungpook National University · South Korea</p><h1>Yawar Rehman<span data-en="Research Professor" data-ko="연구교수">Research Professor</span></h1><p class="intro" data-en="I work on video understanding and trustworthy AI — especially temporal action localization from sparse supervision, reliability-aware learning, and computer vision systems that remain useful outside controlled laboratory settings." data-ko="영상 이해와 신뢰할 수 있는 AI를 연구합니다. 특히 희소한 감독 정보를 활용한 시간적 행동 위치 추정, 신뢰도 기반 학습, 그리고 실제 환경에서도 안정적으로 동작하는 컴퓨터 비전 시스템에 관심이 있습니다.">I work on video understanding and trustworthy AI — especially temporal action localization from sparse supervision, reliability-aware learning, and computer vision systems that remain useful outside controlled laboratory settings.</p><div class="cta"><a class="btn solid" href="#contact" data-en="Contact me" data-ko="연락하기">Contact me</a><a class="btn ghost" href="https://github.com/YawarGuguma" target="_blank" rel="noreferrer" data-en="View GitHub" data-ko="GitHub 보기">View GitHub</a></div></div><figure class="portrait reveal"><span class="tag" data-en="researcher 0.99" data-ko="연구자 0.99">researcher 0.99</span><img src="https://avatars.githubusercontent.com/u/144770407?v=4" width="320" height="320" alt="Yawar Rehman"><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span></figure></div></section>
+<div class="stack"><div class="wrap"><h3 data-en="Research & development stack" data-ko="연구 및 개발 스택">Research & development stack</h3><div class="icons"><figure><img src="https://cdn.simpleicons.org/python/EFEAF2" alt="Python"><figcaption>Python</figcaption></figure><figure><img src="https://cdn.simpleicons.org/pytorch/EFEAF2" alt="PyTorch"><figcaption>PyTorch</figcaption></figure><figure><img src="https://cdn.simpleicons.org/opencv/EFEAF2" alt="OpenCV"><figcaption>OpenCV</figcaption></figure><figure><img src="https://cdn.simpleicons.org/nvidia/EFEAF2" alt="CUDA"><figcaption>CUDA</figcaption></figure><figure><img src="https://cdn.simpleicons.org/linux/EFEAF2" alt="Linux"><figcaption>Linux</figcaption></figure><figure><img src="https://cdn.simpleicons.org/git/EFEAF2" alt="Git"><figcaption>Git</figcaption></figure><figure><img src="https://cdn.simpleicons.org/latex/EFEAF2" alt="LaTeX"><figcaption>LaTeX</figcaption></figure></div></div></div>
 <div class="marquee" aria-hidden="true"><div id="ticker"></div></div>
-
-<section id="projects">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow">Selected research</p>
-      <h2>Projects</h2>
-      <p>Research directions and systems spanning temporal localization, sparse supervision, object detection, and reliable visual intelligence.</p>
-    </div>
-    <div class="cards">
-      <article class="card reveal">
-        <div class="thumb">
-          <svg viewBox="0 0 320 138" aria-hidden="true" fill="none" stroke-linecap="round" font-family="ui-monospace,monospace">
-            <path d="M18 94 H302" stroke="var(--blue)" stroke-opacity=".25"/>
-            <rect x="45" y="73" width="66" height="28" rx="3" fill="var(--blue)" fill-opacity=".10" stroke="var(--blue)" stroke-opacity=".5"/>
-            <rect x="117" y="61" width="92" height="40" rx="3" fill="var(--cyan)" fill-opacity=".11" stroke="var(--cyan)" stroke-opacity=".78"/>
-            <rect x="215" y="78" width="54" height="23" rx="3" fill="var(--blue)" fill-opacity=".08" stroke="var(--blue)" stroke-opacity=".42"/>
-            <circle cx="158" cy="50" r="5" fill="var(--amber)"/>
-            <path d="M158 55 V101" stroke="var(--amber)" stroke-dasharray="3 5"/>
-            <text x="137" y="39" fill="var(--amber)" font-size="8">point label</text>
-            <text x="18" y="119" fill="var(--dim)" font-size="8">time →</text>
-          </svg><span class="num">01</span>
-        </div>
-        <div class="body">
-          <span class="badge">Current research</span>
-          <h3>Point-Supervised Temporal Action Localization</h3>
-          <p>Learning temporal action boundaries from sparse point annotations rather than expensive dense segment labels.</p>
-          <ul class="tags"><li>Video AI</li><li>PSTAL</li><li>ActionFormer</li><li>Weak Supervision</li></ul>
-        </div>
-      </article>
-
-      <article class="card reveal">
-        <div class="thumb">
-          <svg viewBox="0 0 320 138" aria-hidden="true" fill="none" stroke-linecap="round" font-family="ui-monospace,monospace">
-            <path d="M24 112 C68 101 86 64 124 74 C166 86 174 44 218 53 C252 60 268 37 300 31" stroke="var(--cyan)" stroke-width="2"/>
-            <path d="M24 73 H300" stroke="var(--amber)" stroke-opacity=".45" stroke-dasharray="5 6"/>
-            <circle cx="124" cy="74" r="5" fill="var(--blue)"/><circle cx="218" cy="53" r="5" fill="var(--amber)"/>
-            <text x="22" y="128" fill="var(--dim)" font-size="8">confidence / reliability</text>
-          </svg><span class="num">02</span>
-        </div>
-        <div class="body">
-          <span class="badge">Trustworthy AI</span>
-          <h3>Reliability-Aware Learning</h3>
-          <p>Studying uncertainty, supervision reliability, OOD behavior, and robust decision-making for deep visual models.</p>
-          <ul class="tags"><li>Uncertainty</li><li>OOD</li><li>Robustness</li><li>Reliability</li></ul>
-        </div>
-      </article>
-
-      <article class="card reveal">
-        <div class="thumb">
-          <svg viewBox="0 0 320 138" aria-hidden="true" fill="none" stroke-linecap="round" font-family="ui-monospace,monospace">
-            <rect x="22" y="20" width="276" height="96" rx="5" stroke="var(--blue)" stroke-opacity=".28"/>
-            <rect x="72" y="44" width="62" height="52" rx="3" stroke="var(--cyan)" stroke-width="2"/>
-            <rect x="184" y="57" width="31" height="25" rx="2" stroke="var(--amber)" stroke-width="2"/>
-            <circle cx="253" cy="47" r="4" fill="var(--blue)"/>
-            <text x="72" y="39" fill="var(--cyan)" font-size="8">face 0.96</text>
-            <text x="184" y="52" fill="var(--amber)" font-size="8">small obj</text>
-          </svg><span class="num">03</span>
-        </div>
-        <div class="body">
-          <span class="badge">Computer vision</span>
-          <h3>YOLO-SOD & Small-Object Detection</h3>
-          <p>Deep detection methods for faces, small objects, and difficult high-resolution visual scenes.</p>
-          <ul class="tags"><li>YOLO</li><li>Detection</li><li>Small Objects</li><li>Fuzzy Vision</li></ul>
-        </div>
-      </article>
-
-      <article class="card reveal">
-        <div class="thumb">
-          <svg viewBox="0 0 320 138" aria-hidden="true" fill="none" stroke-linecap="round" font-family="ui-monospace,monospace">
-            <g stroke="var(--blue)" stroke-opacity=".35"><rect x="20" y="25" width="42" height="31" rx="2"/><rect x="69" y="25" width="42" height="31" rx="2"/><rect x="118" y="25" width="42" height="31" rx="2"/><rect x="167" y="25" width="42" height="31" rx="2"/><rect x="216" y="25" width="42" height="31" rx="2"/><rect x="265" y="25" width="35" height="31" rx="2"/></g>
-            <path d="M20 105 L55 99 L90 102 L125 86 L160 92 L195 58 L230 72 L265 91 L300 84" stroke="var(--cyan)" stroke-width="2"/>
-            <circle cx="195" cy="58" r="5" fill="var(--amber)"/>
-            <text x="20" y="124" fill="var(--dim)" font-size="8">temporal evidence</text>
-          </svg><span class="num">04</span>
-        </div>
-        <div class="body">
-          <span class="badge">Video understanding</span>
-          <h3>Weakly Supervised Video Intelligence</h3>
-          <p>Reducing annotation cost while retaining useful temporal representations and localization cues in long videos.</p>
-          <ul class="tags"><li>Video</li><li>Temporal Modeling</li><li>Deep Learning</li></ul>
-        </div>
-      </article>
-    </div>
-    <div class="more"><a class="btn ghost" href="https://github.com/YawarGuguma" target="_blank" rel="noreferrer">View GitHub repositories ↗</a></div>
-  </div>
-</section>
-
-<section id="experience">
-  <div class="wrap">
-    <div class="sec-head reveal"><p class="eyebrow">Academic + industrial R&D</p><h2>Experience</h2><p>A career combining university research and teaching with applied AI development in South Korea.</p></div>
-    <ol class="timeline">
-      <li class="reveal"><div class="box"><div class="when">2026 — PRESENT</div><h3>Research Visiting Professor</h3><div class="org">Kyungpook National University · South Korea</div><p>Research in video understanding, temporal action localization, point/weak supervision, computer vision, and trustworthy AI.</p></div></li>
-      <li class="reveal"><div class="box"><div class="when">2023 — 2025</div><h3>Principal Researcher & AI Team Lead</h3><div class="org">OnDAI Inc. · South Korea</div><p>Led industrial AI research and development across computer vision and deep-learning systems.</p></div></li>
-      <li class="reveal"><div class="box"><div class="when">2017 — 2024</div><h3>Assistant Professor</h3><div class="org">NED University of Engineering & Technology · Pakistan</div><p>University teaching, research, student supervision, and academic service in electronics, computer systems, and AI.</p></div></li>
-      <li class="reveal"><div class="box"><div class="when">2010 — 2017</div><h3>Lecturer</h3><div class="org">NED University of Engineering & Technology · Pakistan</div><p>Teaching and research across engineering and computing while developing a long-term research focus in machine intelligence.</p></div></li>
-    </ol>
-  </div>
-</section>
-
-<section id="papers">
-  <div class="wrap">
-    <div class="sec-head reveal"><p class="eyebrow">Research record</p><h2>Selected papers</h2><p>Selected publications in object detection, image understanding, and deep visual learning.</p></div>
-    <div class="paper-list">
-      <article class="paper reveal"><div class="year">2026</div><div><h3>YOLO-SOD: Color probability map-based fuzzy framework using deep models for face detection</h3><p>PLOS ONE</p></div><a href="https://doi.org/10.1371/journal.pone.0360794" target="_blank" rel="noreferrer">DOI ↗</a></article>
-      <article class="paper reveal"><div class="year">2022</div><div><h3>Small Traffic Sign Detection in Big Images: Searching Needle in a Hay</h3><p>IEEE Access</p></div><a href="https://scholar.google.com/scholar?q=%22Small+Traffic+Sign+Detection+in+Big+Images%22" target="_blank" rel="noreferrer">Paper ↗</a></article>
-      <article class="paper reveal"><div class="year">2017</div><div><h3>D-Patches: Effective Traffic Sign Detection with Occlusion Handling</h3><p>IET Computer Vision</p></div><a href="https://scholar.google.com/scholar?q=%22D-Patches%22+%22Yawar+Rehman%22" target="_blank" rel="noreferrer">Paper ↗</a></article>
-      <article class="paper reveal"><div class="year">2016</div><div><h3>Single Image Dehazing via Reliability Guided Fusion</h3><p>Journal of Visual Communication and Image Representation</p></div><a href="https://scholar.google.com/scholar?q=%22Single+Image+Dehazing+via+Reliability+Guided+Fusion%22" target="_blank" rel="noreferrer">Paper ↗</a></article>
-    </div>
-    <div class="more"><a class="btn ghost" href="https://scholar.google.com/citations?user=VclpjuIAAAAJ&hl=en" target="_blank" rel="noreferrer">Full Google Scholar profile ↗</a></div>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="wrap">
-    <div class="sec-head reveal"><p class="eyebrow">Research toolbox</p><h2>Skills</h2><p>Methods and tools I use to move from research questions to reproducible deep-learning experiments.</p></div>
-    <div class="skill-grid">
-      <article class="skill reveal"><h3>Video & Temporal AI</h3><div class="chips"><span>Temporal Action Localization</span><span>ActionFormer</span><span>Weak Supervision</span><span>Point Supervision</span><span>Video Understanding</span></div></article>
-      <article class="skill reveal"><h3>Computer Vision</h3><div class="chips"><span>Object Detection</span><span>Small Objects</span><span>YOLO</span><span>Image Processing</span><span>OpenCV</span></div></article>
-      <article class="skill reveal"><h3>Trustworthy AI</h3><div class="chips"><span>Uncertainty</span><span>OOD Detection</span><span>Robustness</span><span>Reliability Modeling</span></div></article>
-      <article class="skill reveal"><h3>Deep Learning</h3><div class="chips"><span>PyTorch</span><span>Transformers</span><span>CNNs</span><span>Optimization</span><span>Experiment Design</span></div></article>
-      <article class="skill reveal"><h3>Research Computing</h3><div class="chips"><span>Python</span><span>CUDA</span><span>Linux</span><span>Git</span><span>LaTeX</span></div></article>
-      <article class="skill reveal"><h3>Academic Work</h3><div class="chips"><span>Research Writing</span><span>Peer Review</span><span>Teaching</span><span>Student Supervision</span><span>Reproducibility</span></div></article>
-    </div>
-  </div>
-</section>
-
-<section id="education">
-  <div class="wrap">
-    <div class="sec-head reveal"><p class="eyebrow">Academic foundation</p><h2>Education</h2><p>Engineering and advanced research training spanning Pakistan and South Korea.</p></div>
-    <div class="edu-grid">
-      <article class="edu reveal"><div class="degree">PhD · DEEP LEARNING / AI</div><h3>Hanyang University</h3><p>South Korea · Doctoral research in deep learning and computer vision.</p></article>
-      <article class="edu reveal"><div class="degree">MS</div><h3>Hanyang University</h3><p>South Korea · Graduate engineering and research training.</p></article>
-      <article class="edu reveal"><div class="degree">BE</div><h3>Mehran University of Engineering & Technology</h3><p>Pakistan · Engineering foundation.</p></article>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <div class="contact-box reveal">
-      <p class="eyebrow">Research · collaboration · conversation</p>
-      <h2>Let’s work on visual intelligence that can be trusted.</h2>
-      <p>I am interested in research collaboration in video understanding, temporal action localization, sparse supervision, trustworthy AI, and computer vision.</p>
-      <div class="contact-links">
-        <a href="https://github.com/YawarGuguma" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <a href="https://scholar.google.com/citations?user=VclpjuIAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a>
-      </div>
-    </div>
-  </div>
-</section>
+<section id="projects"><div class="wrap"><div class="sec-head reveal"><p class="eyebrow" data-en="Selected work" data-ko="주요 연구">Selected work</p><h2 data-en="Projects" data-ko="프로젝트">Projects</h2><p data-en="Research in video understanding, point-supervised temporal localization, trustworthy AI, and visual detection." data-ko="영상 이해, 포인트 감독 기반 시간적 위치 추정, 신뢰할 수 있는 AI 및 시각적 객체 탐지에 관한 연구입니다.">Research in video understanding, point-supervised temporal localization, trustworthy AI, and visual detection.</p></div><div class="cards">
+<article class="card reveal"><div class="thumb"><div class="grid"></div><div class="timeline-viz"></div><div class="dot"></div><span class="num">01</span></div><div class="body-card"><span class="badge" data-en="Current research" data-ko="현재 연구">Current research</span><h3 data-en="Point-Supervised Temporal Action Localization" data-ko="포인트 감독 기반 시간적 행동 위치 추정">Point-Supervised Temporal Action Localization</h3><p data-en="Learning action boundaries in long, untrimmed videos using sparse point annotations, temporal cues, and reliability-aware supervision." data-ko="희소한 포인트 주석, 시간적 단서, 신뢰도 기반 감독을 활용하여 긴 비편집 영상에서 행동 구간의 경계를 학습합니다.">Learning action boundaries in long, untrimmed videos using sparse point annotations, temporal cues, and reliability-aware supervision.</p><ul class="tags"><li>PSTAL</li><li>ActionFormer</li><li>Weak Supervision</li></ul></div></article>
+<article class="card reveal"><div class="thumb"><div class="grid"></div><div class="heat"></div><span class="num">02</span></div><div class="body-card"><span class="badge" data-en="Published" data-ko="출판">Published</span><h3>YOLO-SOD</h3><p data-en="A color-probability-map based fuzzy framework using deep models for face detection." data-ko="딥러닝 모델을 활용한 얼굴 탐지를 위해 색상 확률 맵과 퍼지 기법을 결합한 프레임워크입니다.">A color-probability-map based fuzzy framework using deep models for face detection.</p><ul class="tags"><li>YOLO</li><li>Face Detection</li><li>Fuzzy Vision</li></ul></div></article>
+<article class="card reveal"><div class="thumb"><div class="grid"></div><div class="box"></div><span class="num">03</span></div><div class="body-card"><span class="badge" data-en="Detection" data-ko="객체 탐지">Detection</span><h3 data-en="Small Traffic Sign Detection in Big Images" data-ko="고해상도 영상의 소형 교통표지판 탐지">Small Traffic Sign Detection in Big Images</h3><p data-en="Detecting extremely small traffic signs in large, high-resolution images where conventional detectors struggle with scale." data-ko="일반적인 탐지기가 크기 문제로 어려움을 겪는 대형 고해상도 영상에서 매우 작은 교통표지판을 탐지합니다.">Detecting extremely small traffic signs in large, high-resolution images where conventional detectors struggle with scale.</p><ul class="tags"><li>Object Detection</li><li>Small Objects</li><li>IEEE Access</li></ul></div></article>
+<article class="card reveal"><div class="thumb"><div class="grid"></div><div class="timeline-viz"></div><span class="num">04</span></div><div class="body-card"><span class="badge" data-en="Video AI" data-ko="영상 AI">Video AI</span><h3 data-en="Weakly Supervised Video Understanding" data-ko="약한 감독 기반 영상 이해">Weakly Supervised Video Understanding</h3><p data-en="Learning useful temporal representations and localization cues from video while reducing the amount of expensive dense annotation." data-ko="비용이 높은 조밀한 주석을 줄이면서 영상에서 유용한 시간적 표현과 위치 추정 단서를 학습합니다.">Learning useful temporal representations and localization cues from video while reducing the amount of expensive dense annotation.</p><ul class="tags"><li>Video</li><li>Temporal Learning</li><li>Deep Learning</li></ul></div></article>
+</div></div></section>
+<section id="experience"><div class="wrap"><div class="sec-head reveal"><p class="eyebrow" data-en="Academic + industry" data-ko="학계 + 산업">Academic + industry</p><h2 data-en="Experience" data-ko="경력">Experience</h2><p data-en="A career spanning university teaching, computer vision research, and industrial AI leadership." data-ko="대학교 교육, 컴퓨터 비전 연구, 산업 AI 연구개발 리더십을 아우르는 경력입니다.">A career spanning university teaching, computer vision research, and industrial AI leadership.</p></div><div class="timeline">
+<article class="role-card reveal"><div class="role-top"><h3 data-en="Research Professor" data-ko="연구교수">Research Professor</h3><span class="when" data-en="2026 — Present" data-ko="2026 — 현재">2026 — Present</span></div><div class="org" data-en="Kyungpook National University · South Korea" data-ko="경북대학교 · 대한민국">Kyungpook National University · South Korea</div><p data-en="Research on video understanding, temporal action localization, computer vision, and trustworthy AI." data-ko="영상 이해, 시간적 행동 위치 추정, 컴퓨터 비전 및 신뢰할 수 있는 AI를 연구하고 있습니다.">Research on video understanding, temporal action localization, computer vision, and trustworthy AI.</p></article>
+<article class="role-card reveal"><div class="role-top"><h3 data-en="Principal Researcher & AI Team Lead" data-ko="수석연구원 및 AI 팀장">Principal Researcher & AI Team Lead</h3><span class="when">2023 — 2025</span></div><div class="org" data-en="OnDAI Inc. · South Korea" data-ko="OnDAI Inc. · 대한민국">OnDAI Inc. · South Korea</div><p data-en="Led applied AI research and development with a focus on computer vision and deep-learning systems." data-ko="컴퓨터 비전과 딥러닝 시스템을 중심으로 응용 AI 연구개발을 이끌었습니다.">Led applied AI research and development with a focus on computer vision and deep-learning systems.</p></article>
+<article class="role-card reveal"><div class="role-top"><h3 data-en="Assistant Professor" data-ko="조교수">Assistant Professor</h3><span class="when">2017 — 2024</span></div><div class="org" data-en="NED University of Engineering & Technology · Pakistan" data-ko="NED 공과대학교 · 파키스탄">NED University of Engineering & Technology · Pakistan</div><p data-en="Teaching, research, student supervision, and academic service across electronics, computer systems, and artificial intelligence." data-ko="전자공학, 컴퓨터 시스템 및 인공지능 분야의 교육, 연구, 학생 지도 및 학술 활동을 수행했습니다.">Teaching, research, student supervision, and academic service across electronics, computer systems, and artificial intelligence.</p></article>
+<article class="role-card reveal"><div class="role-top"><h3 data-en="Lecturer" data-ko="강사">Lecturer</h3><span class="when">2010 — 2017</span></div><div class="org" data-en="NED University of Engineering & Technology · Pakistan" data-ko="NED 공과대학교 · 파키스탄">NED University of Engineering & Technology · Pakistan</div><p data-en="University teaching and research in electronics and computer systems." data-ko="전자공학 및 컴퓨터 시스템 분야의 대학 교육과 연구를 수행했습니다.">University teaching and research in electronics and computer systems.</p></article>
+</div></div></section>
+<section id="papers"><div class="wrap"><div class="sec-head reveal"><p class="eyebrow" data-en="Research output" data-ko="연구 성과">Research output</p><h2 data-en="Selected Papers" data-ko="주요 논문">Selected Papers</h2><p data-en="Selected publications in computer vision, object detection, and image understanding." data-ko="컴퓨터 비전, 객체 탐지 및 영상 이해 분야의 주요 논문입니다.">Selected publications in computer vision, object detection, and image understanding.</p></div><div class="papers">
+<article class="paper reveal"><div class="year">2026</div><div><h3>YOLO-SOD: Color probability map-based fuzzy framework using deep models for face detection</h3><p>PLOS ONE</p></div><a href="https://doi.org/10.1371/journal.pone.0360794" target="_blank" rel="noreferrer">DOI ↗</a></article>
+<article class="paper reveal"><div class="year">2022</div><div><h3>Small Traffic Sign Detection in Big Images: Searching Needle in a Hay</h3><p>IEEE Access</p></div><a href="https://scholar.google.com/scholar?q=%22Small+Traffic+Sign+Detection+in+Big+Images%22" target="_blank" rel="noreferrer" data-en="Paper ↗" data-ko="논문 ↗">Paper ↗</a></article>
+<article class="paper reveal"><div class="year">2017</div><div><h3>D-Patches: Effective Traffic Sign Detection with Occlusion Handling</h3><p>IET Computer Vision</p></div><a href="https://scholar.google.com/scholar?q=%22D-Patches%22+%22Yawar+Rehman%22" target="_blank" rel="noreferrer" data-en="Paper ↗" data-ko="논문 ↗">Paper ↗</a></article>
+<article class="paper reveal"><div class="year">2016</div><div><h3>Single Image Dehazing via Reliability Guided Fusion</h3><p>Journal of Visual Communication and Image Representation</p></div><a href="https://scholar.google.com/scholar?q=%22Single+Image+Dehazing+via+Reliability+Guided+Fusion%22" target="_blank" rel="noreferrer" data-en="Paper ↗" data-ko="논문 ↗">Paper ↗</a></article>
+</div></div></section>
+<section id="skills"><div class="wrap"><div class="sec-head reveal"><p class="eyebrow" data-en="Capabilities" data-ko="연구 역량">Capabilities</p><h2 data-en="Skills" data-ko="기술 및 연구 분야">Skills</h2></div><div class="skill-grid"><article class="skill reveal"><h3 data-en="Video Understanding" data-ko="영상 이해">Video Understanding</h3><p data-en="Temporal action localization, weak supervision, point supervision, action proposals, temporal reasoning." data-ko="시간적 행동 위치 추정, 약한 감독 학습, 포인트 감독 학습, 행동 후보 생성 및 시간적 추론.">Temporal action localization, weak supervision, point supervision, action proposals, temporal reasoning.</p></article><article class="skill reveal"><h3 data-en="Computer Vision" data-ko="컴퓨터 비전">Computer Vision</h3><p data-en="Object detection, small-object detection, image enhancement, face detection, visual recognition." data-ko="객체 탐지, 소형 객체 탐지, 영상 향상, 얼굴 탐지 및 시각 인식.">Object detection, small-object detection, image enhancement, face detection, visual recognition.</p></article><article class="skill reveal"><h3 data-en="Trustworthy AI" data-ko="신뢰할 수 있는 AI">Trustworthy AI</h3><p data-en="Reliability-aware learning, uncertainty, robustness, out-of-distribution detection, probabilistic reasoning." data-ko="신뢰도 기반 학습, 불확실성, 강건성, 분포 외 탐지 및 확률적 추론.">Reliability-aware learning, uncertainty, robustness, out-of-distribution detection, probabilistic reasoning.</p></article><article class="skill reveal"><h3 data-en="Research Engineering" data-ko="연구 개발">Research Engineering</h3><p>PyTorch · Python · CUDA · OpenCV · YOLO · ActionFormer · Linux · Git · LaTeX</p></article></div></div></section>
+<section id="education"><div class="wrap"><div class="sec-head reveal"><p class="eyebrow" data-en="Academic background" data-ko="학력">Academic background</p><h2 data-en="Education" data-ko="교육">Education</h2></div><div class="education"><article class="edu reveal"><div class="degree" data-en="PhD · Deep Learning / AI" data-ko="박사 · 딥러닝 / 인공지능">PhD · Deep Learning / AI</div><div class="school" data-en="Hanyang University · South Korea" data-ko="한양대학교 · 대한민국">Hanyang University · South Korea</div><p data-en="Doctoral research in deep learning and computer vision." data-ko="딥러닝과 컴퓨터 비전 분야의 박사 연구를 수행했습니다.">Doctoral research in deep learning and computer vision.</p></article><article class="edu reveal"><div class="degree" data-en="MS · Engineering" data-ko="석사 · 공학">MS · Engineering</div><div class="school" data-en="Hanyang University · South Korea" data-ko="한양대학교 · 대한민국">Hanyang University · South Korea</div><p data-en="Graduate study and research in engineering." data-ko="공학 분야의 대학원 교육과 연구를 수행했습니다.">Graduate study and research in engineering.</p></article><article class="edu reveal"><div class="degree" data-en="BE · Engineering" data-ko="학사 · 공학">BE · Engineering</div><div class="school" data-en="Mehran University of Engineering & Technology · Pakistan" data-ko="메흐란 공과대학교 · 파키스탄">Mehran University of Engineering & Technology · Pakistan</div><p data-en="Undergraduate engineering education." data-ko="공학 학부 과정을 이수했습니다.">Undergraduate engineering education.</p></article></div></div></section>
+<section id="contact"><div class="wrap"><div class="contact-box reveal"><p class="eyebrow" data-en="Research · Collaboration · Conversation" data-ko="연구 · 협업 · 교류">Research · Collaboration · Conversation</p><h2 data-en="Interested in video intelligence and trustworthy AI?" data-ko="영상 지능과 신뢰할 수 있는 AI 연구에 관심이 있으신가요?">Interested in video intelligence and trustworthy AI?</h2><p data-en="I am interested in research collaboration in video understanding, temporal action localization, weak supervision, computer vision, and trustworthy AI." data-ko="영상 이해, 시간적 행동 위치 추정, 약한 감독 학습, 컴퓨터 비전 및 신뢰할 수 있는 AI 분야의 연구 협업에 관심이 있습니다.">I am interested in research collaboration in video understanding, temporal action localization, weak supervision, computer vision, and trustworthy AI.</p><div class="socials"><a href="https://github.com/YawarGuguma" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://scholar.google.com/scholar?q=%22Yawar+Rehman%22+computer+vision" target="_blank" rel="noreferrer">Google Scholar ↗</a><a href="https://www.linkedin.com/in/yawar-rehman" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:reh.yawar2@gmail.com" data-en="Email ↗" data-ko="이메일 ↗">Email ↗</a></div></div></div></section>
 </main>
-
-<footer><div class="wrap foot"><span>© <span id="year"></span> Yawar Rehman</span><span>Research Professor · Video Understanding · Trustworthy AI</span><a href="#top">Back to top ↑</a></div></footer>
-
+<footer><div class="wrap footer"><span>© <span id="year"></span> Yawar Rehman</span><span data-en="Research Professor · Video Understanding · Trustworthy AI" data-ko="연구교수 · 영상 이해 · 신뢰할 수 있는 AI">Research Professor · Video Understanding · Trustworthy AI</span></div></footer>
 <script>
-const burger=document.getElementById('burger');const nav=document.getElementById('nav');
-function mobileNav(){if(innerWidth<=900){nav.hidden=true}else{nav.hidden=false}}
-mobileNav();addEventListener('resize',mobileNav);
-burger.addEventListener('click',()=>{nav.hidden=!nav.hidden;burger.setAttribute('aria-expanded',String(!nav.hidden))});
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<=900){nav.hidden=true;burger.setAttribute('aria-expanded','false')}}));
-
+const langs=document.querySelectorAll('.lang button');
+function setLang(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-en][data-ko]').forEach(el=>{el.textContent=el.dataset[lang]});langs.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));localStorage.setItem('site-lang',lang);buildTicker(lang)}
+langs.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+const nav=document.getElementById('nav'),burger=document.getElementById('burger');
+function syncMenu(){if(innerWidth<=900)nav.hidden=true;else nav.hidden=false}syncMenu();addEventListener('resize',syncMenu);burger.addEventListener('click',()=>{nav.hidden=!nav.hidden;burger.setAttribute('aria-expanded',String(!nav.hidden))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<=900)nav.hidden=true}));
+const ticker=document.getElementById('ticker');
+function buildTicker(lang){const en=['Video Understanding','Temporal Action Localization','Point Supervision','Trustworthy AI','Computer Vision','Object Detection','Uncertainty','Robust Learning'];const ko=['영상 이해','시간적 행동 위치 추정','포인트 감독 학습','신뢰할 수 있는 AI','컴퓨터 비전','객체 탐지','불확실성','강건 학습'];const a=lang==='ko'?ko:en;ticker.innerHTML=[...a,...a].map(x=>`<span>${x}</span>`).join('')}
+setLang(localStorage.getItem('site-lang')||'en');
 document.getElementById('year').textContent=new Date().getFullYear();
-const words=['VIDEO UNDERSTANDING','TEMPORAL ACTION LOCALIZATION','POINT SUPERVISION','TRUSTWORTHY AI','COMPUTER VISION','OBJECT DETECTION','UNCERTAINTY','ROBUST LEARNING'];
-const ticker=document.getElementById('ticker');const twice=[...words,...words];twice.forEach(w=>{const s=document.createElement('span');s.textContent=w;ticker.appendChild(s)});
-
-const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-// Subtle research-field canvas: moving temporal points and links.
-const canvas=document.getElementById('field'),ctx=canvas.getContext('2d');let pts=[];
-function resize(){const r=canvas.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);canvas.width=r.width*d;canvas.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);const n=Math.max(28,Math.floor(r.width/32));pts=Array.from({length:n},()=>({x:Math.random()*r.width,y:Math.random()*r.height,vx:(Math.random()-.5)*.18,vy:(Math.random()-.5)*.15,r:Math.random()*1.5+.5}))}
-function draw(){const w=canvas.clientWidth,h=canvas.clientHeight;ctx.clearRect(0,0,w,h);for(const p of pts){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1}for(let i=0;i<pts.length;i++){for(let j=i+1;j<pts.length;j++){const a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);if(d<115){ctx.strokeStyle=`rgba(80,213,197,${(1-d/115)*.11})`;ctx.lineWidth=.7;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke()}}}for(const p of pts){ctx.fillStyle='rgba(119,169,247,.34)';ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill()}requestAnimationFrame(draw)}
-resize();addEventListener('resize',resize);draw();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.1});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
 </script>
 </body>
 </html>
