@@ -1,0 +1,15 @@
+/* Hero type hierarchy: keep the name dominant and the research focus compact. */
+h1 > span {
+  font-size: clamp(1.65rem, 2.9vw, 2.85rem);
+  line-height: 1.04;
+  letter-spacing: -.03em;
+  margin-top: .38rem;
+  max-width: 19ch;
+}
+
+@media (max-width: 620px) {
+  h1 > span {
+    font-size: clamp(1.5rem, 7.2vw, 2.15rem);
+    max-width: 18ch;
+  }
+}
