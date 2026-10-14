@@ -4,7 +4,7 @@ Personal research website for **Yawar Rehman, PhD**.
 
 **Research Professor · Video Understanding · Trustworthy AI**
 
-Live site: https://yawarguguma.github.io
+Live site: https://yawar26.github.io
 
 ## Profile focus
 
