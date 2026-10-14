@@ -29,6 +29,18 @@ function configureResearchIdentity(){
   if(ogDescription)ogDescription.content='Video Understanding · Trustworthy AI · Physical AI · Computer Vision';
 }
 
+function configurePortrait(){
+  const portrait=$('.portrait img');
+  if(portrait){
+    portrait.src='assests/yawar-rehman.png';
+    portrait.removeAttribute('height');
+    portrait.setAttribute('width','320');
+    portrait.alt='Yawar Rehman';
+  }
+  const ogImage=$('meta[property="og:image"]');
+  if(ogImage)ogImage.content='https://yawarguguma.github.io/assests/yawar-rehman.png';
+}
+
 function loadHeroStyles(){
   if($('link[href="hero.css"]'))return;
   const link=document.createElement('link');
@@ -77,6 +89,7 @@ function setLang(lang){
 }
 
 configureResearchIdentity();
+configurePortrait();
 loadHeroStyles();
 ensurePhysicalAISkill();
 
