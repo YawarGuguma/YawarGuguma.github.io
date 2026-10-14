@@ -4,7 +4,59 @@ const ticker=$('#ticker');
 const nav=$('#nav');
 const burger=$('#burger');
 
-function text(obj,lang){return obj?.[lang]??obj?.en??''}
+function cleanEnglish(value=''){
+  return value.replace(/([A-Za-z])[-‐‑]([A-Za-z])/g,'$1 $2');
+}
+function text(obj,lang){
+  const value=obj?.[lang]??obj?.en??'';
+  return lang==='en'?cleanEnglish(value):value;
+}
+
+function configureResearchIdentity(){
+  const heroFocus=$('h1 span[data-en][data-ko]');
+  if(heroFocus){
+    heroFocus.dataset.en='Video Understanding · Trustworthy AI · Physical AI';
+    heroFocus.dataset.ko='영상 이해 · 신뢰할 수 있는 AI · 피지컬 AI';
+  }
+  const footerFocus=$('footer [data-en][data-ko]');
+  if(footerFocus){
+    footerFocus.dataset.en='Research Professor · Video Understanding · Trustworthy AI · Physical AI';
+    footerFocus.dataset.ko='연구교수 · 영상 이해 · 신뢰할 수 있는 AI · 피지컬 AI';
+  }
+  const description=$('meta[name="description"]');
+  if(description)description.content='Yawar Rehman, PhD — Research Professor at Kyungpook National University. Video understanding, trustworthy AI, Physical AI, temporal action localization, and computer vision.';
+  const ogDescription=$('meta[property="og:description"]');
+  if(ogDescription)ogDescription.content='Video Understanding · Trustworthy AI · Physical AI · Computer Vision';
+}
+
+function applyHeroTypography(){
+  const style=document.createElement('style');
+  style.id='hero-type-adjustment';
+  style.textContent=`
+    h1>span{
+      font-size:clamp(1.65rem,2.9vw,2.85rem);
+      line-height:1.04;
+      letter-spacing:-.03em;
+      margin-top:.38rem;
+      max-width:19ch;
+    }
+    @media(max-width:620px){
+      h1>span{font-size:clamp(1.5rem,7.2vw,2.15rem);max-width:18ch}
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+function ensurePhysicalAISkill(){
+  const grid=$('.skill-grid');
+  if(!grid||$('#physical-ai-skill'))return;
+  const card=document.createElement('article');
+  card.className='skill reveal on';
+  card.id='physical-ai-skill';
+  card.innerHTML='<h3 data-en="Physical AI" data-ko="피지컬 AI">Physical AI</h3><p data-en="Embodied and real world intelligent systems that connect perception, reasoning, and action." data-ko="지각, 추론, 행동을 연결하는 실세계 지능형 시스템과 체화 AI를 연구합니다.">Embodied and real world intelligent systems that connect perception, reasoning, and action.</p>';
+  grid.appendChild(card);
+}
+
 function renderExperience(lang){
   const host=$('#experience-list');
   if(!host||!window.SITE_DATA)return;
@@ -17,18 +69,27 @@ function renderEducation(lang){
 }
 function buildTicker(lang){
   if(!ticker)return;
-  const en=['Video Understanding','Temporal Action Localization','Point Supervision','Trustworthy AI','Computer Vision','Object Detection','Uncertainty','Robust Learning'];
-  const ko=['영상 이해','시간적 행동 위치 추정','포인트 감독 학습','신뢰할 수 있는 AI','컴퓨터 비전','객체 탐지','불확실성','강건 학습'];
+  const en=['Video Understanding','Temporal Action Localization','Point Supervision','Trustworthy AI','Physical AI','Computer Vision','Object Detection','Uncertainty','Robust Learning'];
+  const ko=['영상 이해','시간적 행동 위치 추정','포인트 감독 학습','신뢰할 수 있는 AI','피지컬 AI','컴퓨터 비전','객체 탐지','불확실성','강건 학습'];
   const a=lang==='ko'?ko:en;
   ticker.innerHTML=[...a,...a].map(x=>`<span>${x}</span>`).join('');
 }
 function setLang(lang){
   document.documentElement.lang=lang;
-  $$('[data-en][data-ko]').forEach(el=>el.textContent=el.dataset[lang]);
+  $$('[data-en][data-ko]').forEach(el=>{
+    el.textContent=lang==='en'?cleanEnglish(el.dataset.en):el.dataset.ko;
+  });
   langButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));
   localStorage.setItem('site-lang',lang);
-  renderExperience(lang); renderEducation(lang); buildTicker(lang);
+  renderExperience(lang);
+  renderEducation(lang);
+  buildTicker(lang);
 }
+
+configureResearchIdentity();
+applyHeroTypography();
+ensurePhysicalAISkill();
+
 langButtons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 function syncMenu(){if(!nav)return;if(innerWidth<=900)nav.hidden=true;else nav.hidden=false}
 syncMenu();addEventListener('resize',syncMenu);
