@@ -29,22 +29,12 @@ function configureResearchIdentity(){
   if(ogDescription)ogDescription.content='Video Understanding · Trustworthy AI · Physical AI · Computer Vision';
 }
 
-function applyHeroTypography(){
-  const style=document.createElement('style');
-  style.id='hero-type-adjustment';
-  style.textContent=`
-    h1>span{
-      font-size:clamp(1.65rem,2.9vw,2.85rem);
-      line-height:1.04;
-      letter-spacing:-.03em;
-      margin-top:.38rem;
-      max-width:19ch;
-    }
-    @media(max-width:620px){
-      h1>span{font-size:clamp(1.5rem,7.2vw,2.15rem);max-width:18ch}
-    }
-  `;
-  document.head.appendChild(style);
+function loadHeroStyles(){
+  if($('link[href="hero.css"]'))return;
+  const link=document.createElement('link');
+  link.rel='stylesheet';
+  link.href='hero.css';
+  document.head.appendChild(link);
 }
 
 function ensurePhysicalAISkill(){
@@ -87,7 +77,7 @@ function setLang(lang){
 }
 
 configureResearchIdentity();
-applyHeroTypography();
+loadHeroStyles();
 ensurePhysicalAISkill();
 
 langButtons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
