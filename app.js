@@ -43,7 +43,7 @@ function configureHeroBio(){
     replacement.id='hero-introduction';
     const paragraphs=[
       {
-        en:'I have been working in Korea for the last three (03) years. I worked in the industry for an AI company for ~2.5 years. I built AI models for client needs, raw data annotation strategies and management for clients, AI video anonymization, and video understanding. I built edge AI for dashcam systems using computer vision models deployed on NVIDIA Jetson and Rockchip processors on Radxa boards, contributing to physical AI perception in real world environments.',
+        en:'I have been working in Korea for the last three (03) years. I worked in AI company for 2.5 years. I built AI models for client needs, raw data annotation strategies and management for clients, AI video anonymization, and video understanding. I built edge AI for dashcam systems using computer vision models deployed on NVIDIA Jetson and Rockchip processors on Radxa boards, contributing to physical AI perception in real world environments.',
         ko:'저는 지난 3년 동안 한국에서 일해 왔습니다. 약 2.5년 동안 AI 회사에서 산업 경험을 쌓았습니다. 고객 요구에 맞는 AI 모델, 원시 데이터 주석 전략 및 관리, AI 영상 익명화, 영상 이해 관련 업무를 수행했습니다. 또한 NVIDIA Jetson과 Radxa 보드의 Rockchip 프로세서에 컴퓨터 비전 모델을 배포하여 대시캠 시스템용 엣지 AI를 개발했으며, 실제 환경에서의 피지컬 AI 인지에 기여했습니다.'
       },
       {
