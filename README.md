@@ -9,7 +9,7 @@ Live site: https://yawar26.github.io
 ## Profile focus
 
 - Research Professor at Kyungpook National University
-- PhD in Deep Learning / AI from Hanyang University
+- MS-PhD in Deep Learning / AI from Hanyang University
 - Video Understanding and Temporal Action Localization
 - Trustworthy AI and reliability-aware learning
 - Computer Vision and Object Detection
