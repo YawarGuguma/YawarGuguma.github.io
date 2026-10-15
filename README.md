@@ -11,7 +11,7 @@ Live site: https://yawar26.github.io
 - Research Professor at Kyungpook National University
 - MS-PhD in Deep Learning / AI from Hanyang University
 - Video Understanding and Temporal Action Localization
-- Trustworthy AI and reliability-aware learning
+- Physical AI, Trustworthy AI and reliability-aware learning
 - Computer Vision and Object Detection
 - Academic and industrial AI R&D experience
 
