@@ -26,14 +26,25 @@ function configureResearchIdentity(){
   if(ogDescription)ogDescription.content='Video Understanding · Physical AI · Computer Vision';
 }
 
-function removeTrustworthyAICopy(){
-  const intro=$('.hero .intro');
-  if(intro){
-    intro.dataset.en='I work on video understanding and Physical AI — especially temporal action localization from sparse supervision and computer vision systems for real world environments.';
-    intro.dataset.ko='영상 이해와 피지컬 AI를 연구합니다. 특히 희소 감독 기반 시간적 행동 위치 추정과 실제 환경을 위한 컴퓨터 비전 시스템에 관심이 있습니다.';
-    intro.textContent=intro.dataset.en;
+function configureHeroBio(){
+  const heroRole=$('.hero-role');
+  if(heroRole){
+    heroRole.dataset.en='PhD — Hanyang University, South Korea';
+    heroRole.dataset.ko='박사 — 한양대학교, 대한민국';
+    heroRole.textContent=heroRole.dataset.en;
   }
 
+  $('.hero .credential')?.remove();
+
+  const intro=$('.hero .intro');
+  if(intro){
+    intro.dataset.en='I work on video understanding and Physical AI — especially temporal action localization from sparse supervision and computer vision systems for real world environments. I made projects by running different image and video AI models in NVIDIA Jetson boards and Rockwell processors on Radxa boards.';
+    intro.dataset.ko='영상 이해와 피지컬 AI를 연구합니다. 특히 희소 감독 기반 시간적 행동 위치 추정과 실제 환경을 위한 컴퓨터 비전 시스템에 관심이 있습니다. NVIDIA Jetson 보드와 Radxa 보드의 Rockwell 프로세서에서 다양한 이미지 및 비디오 AI 모델을 실행하는 프로젝트를 수행했습니다.';
+    intro.textContent=intro.dataset.en;
+  }
+}
+
+function removeTrustworthyAICopy(){
   const projectsIntro=$('#projects .sec-head p:last-child');
   if(projectsIntro){
     projectsIntro.dataset.en='Research in video understanding, point supervised temporal localization, Physical AI, and visual detection.';
@@ -163,6 +174,7 @@ function setLang(lang){
 }
 
 configureResearchIdentity();
+configureHeroBio();
 removeTrustworthyAICopy();
 configurePortrait();
 loadHeroStyles();
