@@ -20,13 +20,51 @@ function configureResearchIdentity(){
   }
   const footerFocus=$('footer [data-en][data-ko]');
   if(footerFocus){
-    footerFocus.dataset.en='Research Professor · Video Understanding · Trustworthy AI · Physical AI';
-    footerFocus.dataset.ko='연구교수 · 영상 이해 · 신뢰할 수 있는 AI · 피지컬 AI';
+    footerFocus.dataset.en='Research Professor · Video Understanding · Physical AI · Computer Vision';
+    footerFocus.dataset.ko='연구교수 · 영상 이해 · 피지컬 AI · 컴퓨터 비전';
   }
   const description=$('meta[name="description"]');
-  if(description)description.content='Yawar Rehman, PhD — Research Professor at Kyungpook National University. Video understanding, trustworthy AI, Physical AI, temporal action localization, and computer vision.';
+  if(description)description.content='Yawar Rehman, PhD — Research Professor at Kyungpook National University. Video understanding, Physical AI, temporal action localization, and computer vision.';
   const ogDescription=$('meta[property="og:description"]');
-  if(ogDescription)ogDescription.content='Video Understanding · Trustworthy AI · Physical AI · Computer Vision';
+  if(ogDescription)ogDescription.content='Video Understanding · Physical AI · Computer Vision';
+}
+
+function removeTrustworthyAICopy(){
+  const intro=$('.hero .intro');
+  if(intro){
+    intro.dataset.en='I work on video understanding and Physical AI — especially temporal action localization from sparse supervision and computer vision systems for real world environments.';
+    intro.dataset.ko='영상 이해와 피지컬 AI를 연구합니다. 특히 희소 감독 기반 시간적 행동 위치 추정과 실제 환경을 위한 컴퓨터 비전 시스템에 관심이 있습니다.';
+    intro.textContent=intro.dataset.en;
+  }
+
+  const projectsIntro=$('#projects .sec-head p:last-child');
+  if(projectsIntro){
+    projectsIntro.dataset.en='Research in video understanding, point supervised temporal localization, Physical AI, and visual detection.';
+    projectsIntro.dataset.ko='영상 이해, 포인트 감독 기반 시간적 위치 추정, 피지컬 AI 및 시각 객체 탐지에 관한 연구입니다.';
+    projectsIntro.textContent=projectsIntro.dataset.en;
+  }
+
+  const contactHeading=$('#contact h2');
+  if(contactHeading){
+    contactHeading.dataset.en='Interested in video intelligence, Physical AI, and computer vision?';
+    contactHeading.dataset.ko='영상 지능, 피지컬 AI 및 컴퓨터 비전 연구에 관심이 있으신가요?';
+    contactHeading.textContent=contactHeading.dataset.en;
+  }
+
+  const contactText=$('#contact .contact-box h2 + p');
+  if(contactText){
+    contactText.dataset.en='I am interested in research collaboration in video understanding, temporal action localization, weak supervision, Physical AI, and computer vision.';
+    contactText.dataset.ko='영상 이해, 시간적 행동 위치 추정, 약한 감독 학습, 피지컬 AI 및 컴퓨터 비전 분야의 연구 협업에 관심이 있습니다.';
+    contactText.textContent=contactText.dataset.en;
+  }
+
+  const trustworthySkill=$$('#skills .skill').find(card=>card.querySelector('h3')?.dataset.en==='Trustworthy AI');
+  if(trustworthySkill)trustworthySkill.remove();
+
+  if(window.SITE_DATA?.experience?.[0]?.summary){
+    SITE_DATA.experience[0].summary.en='Research in video understanding, temporal action localization, computer vision, and Physical AI.';
+    SITE_DATA.experience[0].summary.ko='영상 이해, 시간적 행동 위치 추정, 컴퓨터 비전 및 피지컬 AI를 연구하고 있습니다.';
+  }
 }
 
 function configurePortrait(){
@@ -51,12 +89,27 @@ function loadHeroStyles(){
 
 function ensurePhysicalAISkill(){
   const grid=$('.skill-grid');
-  if(!grid||$('#physical-ai-skill'))return;
+  if(!grid)return;
+  const existing=$$('.skill h3',grid).some(h=>h.dataset.en==='Physical AI'||h.textContent.trim()==='Physical AI');
+  if(existing)return;
   const card=document.createElement('article');
   card.className='skill reveal on';
   card.id='physical-ai-skill';
   card.innerHTML='<h3 data-en="Physical AI" data-ko="피지컬 AI">Physical AI</h3><p data-en="Embodied and real world intelligent systems that connect perception, reasoning, and action." data-ko="지각, 추론, 행동을 연결하는 실세계 지능형 시스템과 체화 AI를 연구합니다.">Embodied and real world intelligent systems that connect perception, reasoning, and action.</p>';
   grid.appendChild(card);
+}
+
+function configureVisitCounter(){
+  const footer=$('footer .footer');
+  if(!footer||$('#visit-counter'))return;
+  const counter=document.createElement('a');
+  counter.id='visit-counter';
+  counter.href='https://hits.sh/yawar26.github.io/';
+  counter.target='_blank';
+  counter.rel='noreferrer';
+  counter.setAttribute('aria-label','Website visit statistics');
+  counter.innerHTML='<img src="https://hits.sh/yawar26.github.io.svg?style=flat-square&label=visits" alt="Website visits">';
+  footer.appendChild(counter);
 }
 
 function renderExperience(lang){
@@ -71,8 +124,8 @@ function renderEducation(lang){
 }
 function buildTicker(lang){
   if(!ticker)return;
-  const en=['Video Understanding','Temporal Action Localization','Point Supervision','Trustworthy AI','Physical AI','Computer Vision','Object Detection','Uncertainty','Robust Learning'];
-  const ko=['영상 이해','시간적 행동 위치 추정','포인트 감독 학습','신뢰할 수 있는 AI','피지컬 AI','컴퓨터 비전','객체 탐지','불확실성','강건 학습'];
+  const en=['Video Understanding','Temporal Action Localization','Point Supervision','Physical AI','Computer Vision','Object Detection','Uncertainty','Robust Learning'];
+  const ko=['영상 이해','시간적 행동 위치 추정','포인트 감독 학습','피지컬 AI','컴퓨터 비전','객체 탐지','불확실성','강건 학습'];
   const a=lang==='ko'?ko:en;
   ticker.innerHTML=[...a,...a].map(x=>`<span>${x}</span>`).join('');
 }
@@ -89,9 +142,11 @@ function setLang(lang){
 }
 
 configureResearchIdentity();
+removeTrustworthyAICopy();
 configurePortrait();
 loadHeroStyles();
 ensurePhysicalAISkill();
+configureVisitCounter();
 
 langButtons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 function syncMenu(){if(!nav)return;if(innerWidth<=900)nav.hidden=true;else nav.hidden=false}
