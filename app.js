@@ -43,16 +43,16 @@ function configureHeroBio(){
     replacement.id='hero-introduction';
     const paragraphs=[
       {
-        en:'I have been working in Korea for the past three years. I worked in the AI industry for approximately 2.5 years, where I built AI models for client needs, developed and managed raw data annotation strategies, and worked on AI video anonymization and video understanding. I also developed edge AI for dashcam systems using computer vision models deployed on NVIDIA Jetson and Rockchip processor based Radxa platforms, contributing to physical AI perception in real world environments.',
-        ko:'저는 지난 3년 동안 한국에서 일해 왔습니다. 약 2.5년 동안 AI 산업에서 근무하며 고객 요구에 맞는 AI 모델을 개발하고, 원시 데이터 주석 전략을 설계 및 관리했으며, AI 영상 익명화와 영상 이해 업무를 수행했습니다. 또한 NVIDIA Jetson 및 Rockchip 프로세서 기반 Radxa 플랫폼에 컴퓨터 비전 모델을 배포하여 대시캠 시스템용 엣지 AI를 개발했으며, 실제 환경에서의 피지컬 AI 인지에 기여했습니다.'
+        en:'I have been working in Korea for the last three (03) years. I worked in the industry for an AI company for ~2.5 years. I built AI models for client needs, raw data annotation strategies and management for clients, AI video anonymization, and video understanding. I built edge AI for dashcam systems using computer vision models deployed on NVIDIA Jetson and Rockchip processors on Radxa boards, contributing to physical AI perception in real world environments.',
+        ko:'저는 지난 3년 동안 한국에서 일해 왔습니다. 약 2.5년 동안 AI 회사에서 산업 경험을 쌓았습니다. 고객 요구에 맞는 AI 모델, 원시 데이터 주석 전략 및 관리, AI 영상 익명화, 영상 이해 관련 업무를 수행했습니다. 또한 NVIDIA Jetson과 Radxa 보드의 Rockchip 프로세서에 컴퓨터 비전 모델을 배포하여 대시캠 시스템용 엣지 AI를 개발했으며, 실제 환경에서의 피지컬 AI 인지에 기여했습니다.'
       },
       {
-        en:"In academia, I worked for fifteen years at NED University of Engineering & Technology, one of Pakistan's top universities, where I served as an assistant professor in the Department of Electronic Engineering. I taught AI and electronics subjects to undergraduate, master's, and Ph.D. students. I supervised three Ph.D. students through completion of their degrees and designed several AI based courses for undergraduate, master's, and Ph.D. programs. I also served as a member of the Board of Studies and the Industrial Advisory Board, and as the ISO coordinator for documentation and management standards in the Department of Electronic Engineering.",
-        ko:'학계에서는 파키스탄의 주요 대학 중 하나인 NED University of Engineering & Technology 전자공학과에서 15년 동안 근무했으며 조교수로 재직했습니다. 학부, 석사, 박사과정 학생들에게 AI 및 전자공학 과목을 강의했고, 3명의 박사과정 학생이 학위를 완료하도록 지도했습니다. 또한 학부, 석사, 박사과정을 위한 여러 AI 기반 교과목을 설계했습니다. 학과의 Board of Studies와 Industrial Advisory Board 위원으로 활동했으며, 전자공학과의 문서화 및 관리 표준을 담당하는 ISO 코디네이터로도 근무했습니다.'
+        en:'In academia, I worked for fifteen (15) years at one of the top universities in Pakistan, NED University, as an assistant professor in the Department of Electronic Engineering. I taught AI and electronics subjects to undergraduate, master’s, and Ph.D. students. I supervised three (03) Ph.D. students in the completion of their Ph.D. degrees. I designed several AI based courses for undergraduate, master’s, and Ph.D. students. I was a member of the Board of Studies and Industrial Advisory Board in the same department. I was the ISO coordinator for the standards of documentation and management for the Department of Electronic Engineering at NED University.',
+        ko:'학계에서는 파키스탄의 주요 대학 중 하나인 NED University 전자공학과에서 15년 동안 근무했으며 조교수로 재직했습니다. 학부, 석사, 박사과정 학생들에게 AI 및 전자공학 과목을 강의했습니다. 3명의 박사과정 학생이 박사학위를 완료하도록 지도했습니다. 학부, 석사, 박사과정을 위한 여러 AI 기반 교과목을 설계했습니다. 같은 학과의 Board of Studies와 Industrial Advisory Board 위원으로 활동했습니다. 또한 NED University 전자공학과의 문서화 및 관리 표준을 담당하는 ISO 코디네이터로 근무했습니다.'
       },
       {
-        en:'Currently, I am working as a research professor at Kyungpook National University, where I am building AI models for video understanding and making these models deployable on edge devices.',
-        ko:'현재 경북대학교 연구교수로 재직하며 영상 이해를 위한 AI 모델을 개발하고 이러한 모델을 엣지 디바이스에 배포할 수 있도록 연구하고 있습니다.'
+        en:'Currently, I am working as a research professor at Kyungpook National University. Here, I am building AI models for video understanding and making those models deployable on edge devices.',
+        ko:'현재 경북대학교에서 연구교수로 근무하고 있습니다. 이곳에서 영상 이해를 위한 AI 모델을 개발하고 있으며, 해당 모델을 엣지 디바이스에 배포할 수 있도록 연구하고 있습니다.'
       }
     ];
     replacement.replaceChildren(...paragraphs.map(item=>{
