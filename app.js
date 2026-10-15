@@ -38,8 +38,8 @@ function configureHeroBio(){
 
   const intro=$('.hero .intro');
   if(intro){
-    intro.dataset.en='I work on video understanding and Physical AI — especially temporal action localization from sparse supervision and computer vision systems for real world environments. I made projects by running different image and video AI models in NVIDIA Jetson boards and Rockwell processors on Radxa boards.';
-    intro.dataset.ko='영상 이해와 피지컬 AI를 연구합니다. 특히 희소 감독 기반 시간적 행동 위치 추정과 실제 환경을 위한 컴퓨터 비전 시스템에 관심이 있습니다. NVIDIA Jetson 보드와 Radxa 보드의 Rockwell 프로세서에서 다양한 이미지 및 비디오 AI 모델을 실행하는 프로젝트를 수행했습니다.';
+    intro.dataset.en='I work on video understanding and Physical AI — especially temporal action localization from sparse supervision and computer vision systems for real world environments. I made projects by running different image and video AI models in NVIDIA Jetson boards and Rockchip processors on Radxa boards.';
+    intro.dataset.ko='영상 이해와 피지컬 AI를 연구합니다. 특히 희소 감독 기반 시간적 행동 위치 추정과 실제 환경을 위한 컴퓨터 비전 시스템에 관심이 있습니다. NVIDIA Jetson 보드와 Radxa 보드의 Rockchip 프로세서에서 다양한 이미지 및 비디오 AI 모델을 실행하는 프로젝트를 수행했습니다.';
     intro.textContent=intro.dataset.en;
   }
 }
