@@ -15,8 +15,8 @@ function text(obj,lang){
 function configureResearchIdentity(){
   const heroFocus=$('h1 span[data-en][data-ko]');
   if(heroFocus){
-    heroFocus.dataset.en='Video Understanding · Trustworthy AI · Physical AI';
-    heroFocus.dataset.ko='영상 이해 · 신뢰할 수 있는 AI · 피지컬 AI';
+    heroFocus.dataset.en='Video Understanding · Physical AI · Computer Vision';
+    heroFocus.dataset.ko='영상 이해 · 피지컬 AI · 컴퓨터 비전';
   }
   const footerFocus=$('footer [data-en][data-ko]');
   if(footerFocus){
