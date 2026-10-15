@@ -19,10 +19,7 @@ function configureResearchIdentity(){
     heroFocus.dataset.ko='영상 이해 · 피지컬 AI · 컴퓨터 비전';
   }
   const footerFocus=$('footer [data-en][data-ko]');
-  if(footerFocus){
-    footerFocus.dataset.en='Research Professor · Video Understanding · Physical AI · Computer Vision';
-    footerFocus.dataset.ko='연구교수 · 영상 이해 · 피지컬 AI · 컴퓨터 비전';
-  }
+  if(footerFocus)footerFocus.remove();
   const description=$('meta[name="description"]');
   if(description)description.content='Yawar Rehman, PhD — Research Professor at Kyungpook National University. Video understanding, Physical AI, temporal action localization, and computer vision.';
   const ogDescription=$('meta[property="og:description"]');
@@ -60,6 +57,12 @@ function configurePortrait(){
     portrait.removeAttribute('height');
     portrait.setAttribute('width','320');
     portrait.alt='Yawar Rehman';
+  }
+  const portraitTag=$('.portrait .tag');
+  if(portraitTag){
+    portraitTag.dataset.en='person 0.99';
+    portraitTag.dataset.ko='사람 0.99';
+    portraitTag.textContent='person 0.99';
   }
   const ogImage=$('meta[property="og:image"]');
   if(ogImage)ogImage.content='https://yawarguguma.github.io/assests/yawar-rehman.png';
