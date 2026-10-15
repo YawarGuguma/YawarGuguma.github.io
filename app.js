@@ -98,9 +98,12 @@ function configureVisitCounter(){
   footer.appendChild(counter);
 }
 
-function configureContactForm(){
+function configureSimpleContact(){
   const box=$('#contact .contact-box');
-  if(!box||$('#contact-form'))return;
+  if(!box)return;
+
+  const eyebrow=$('#contact .eyebrow');
+  if(eyebrow)eyebrow.remove();
 
   const heading=$('#contact h2');
   if(heading){
@@ -111,58 +114,20 @@ function configureContactForm(){
 
   const description=$('#contact .contact-box h2 + p');
   if(description){
-    description.dataset.en="Working on video understanding, Physical AI, or computer vision? Say hello. I'm always open to a conversation.";
-    description.dataset.ko='영상 이해, 피지컬 AI 또는 컴퓨터 비전 분야에서 연구하고 계신가요? 언제든 편하게 연락해 주세요.';
+    description.dataset.en="Working on video understanding, physical AI, computer vision or AI model deployment onto edge hardware? Say hello — I'm always open to a conversation.";
+    description.dataset.ko='영상 이해, 피지컬 AI, 컴퓨터 비전 또는 엣지 하드웨어에 AI 모델을 배포하는 연구를 하고 계신가요? 언제든 편하게 연락해 주세요.';
     description.textContent=description.dataset.en;
   }
 
-  const note=document.createElement('p');
-  note.className='contact-note';
-  note.dataset.en='The form opens your own mail app with the message ready to send. Nothing is stored on this site.';
-  note.dataset.ko='이 양식은 작성된 메시지와 함께 사용자의 메일 앱을 엽니다. 이 사이트에는 어떠한 내용도 저장되지 않습니다.';
-  note.textContent=note.dataset.en;
+  $('#contact .socials')?.remove();
+  $('#contact-form')?.remove();
+  $('#contact .contact-note')?.remove();
+  $('#contact .contact-email')?.remove();
 
-  const form=document.createElement('form');
-  form.id='contact-form';
-  form.className='contact-form';
-  form.innerHTML=`
-    <div class="contact-field">
-      <label for="contact-name" data-en="Name *" data-ko="이름 *">Name *</label>
-      <input id="contact-name" name="name" type="text" autocomplete="name" required>
-    </div>
-    <div class="contact-field">
-      <label for="contact-email" data-en="E-mail *" data-ko="이메일 *">E-mail *</label>
-      <input id="contact-email" name="email" type="email" autocomplete="email" required>
-    </div>
-    <div class="contact-field contact-message-field">
-      <label for="contact-message" data-en="Message *" data-ko="메시지 *">Message *</label>
-      <textarea id="contact-message" name="message" maxlength="300" required></textarea>
-      <div class="contact-count" id="contact-count">0 / 300</div>
-    </div>
-    <button class="btn solid contact-submit" type="submit" data-en="Send message" data-ko="메시지 보내기">Send message</button>`;
-
-  const socials=$('#contact .socials');
-  if(socials){
-    socials.insertAdjacentElement('afterend',note);
-    note.insertAdjacentElement('afterend',form);
-  }else{
-    box.append(note,form);
-  }
-
-  const textarea=$('#contact-message');
-  const counter=$('#contact-count');
-  textarea?.addEventListener('input',()=>{counter.textContent=`${textarea.value.length} / 300`;});
-
-  form.addEventListener('submit',event=>{
-    event.preventDefault();
-    if(!form.reportValidity())return;
-    const name=$('#contact-name').value.trim();
-    const email=$('#contact-email').value.trim();
-    const message=$('#contact-message').value.trim();
-    const subject=`Website message from ${name}`;
-    const body=`Name: ${name}\nE-mail: ${email}\n\nMessage:\n${message}`;
-    window.location.href=`mailto:reh.yawar2@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  });
+  const email=document.createElement('p');
+  email.className='contact-email';
+  email.innerHTML='Email: <a href="mailto:reh.yawar2@gmail.com">reh.yawar2@gmail.com</a>';
+  box.appendChild(email);
 }
 
 function renderExperience(lang){
@@ -200,7 +165,7 @@ configurePortrait();
 loadHeroStyles();
 ensurePhysicalAISkill();
 configureVisitCounter();
-configureContactForm();
+configureSimpleContact();
 
 langButtons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 function syncMenu(){if(!nav)return;if(innerWidth<=900)nav.hidden=true;else nav.hidden=false}
